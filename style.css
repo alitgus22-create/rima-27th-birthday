@@ -1,0 +1,81 @@
+*{box-sizing:border-box}
+:root{
+  --wine:#651f2a;
+  --deep:#100d0e;
+  --black:#090809;
+  --gold:#c6a15b;
+  --champagne:#eadcc8;
+  --cream:#f4eee4;
+  --muted:#bdb2a5;
+}
+html{scroll-behavior:smooth}
+body{
+  margin:0;background:var(--black);color:var(--cream);
+  font-family:Montserrat,Arial,sans-serif;font-weight:300;line-height:1.7;
+}
+main{overflow:hidden}
+.hero{
+  min-height:100vh;position:relative;display:flex;align-items:center;justify-content:center;
+  text-align:center;background:
+  linear-gradient(180deg,rgba(7,5,6,.25),rgba(7,5,6,.82)),
+  url("images/rima-1.png") center 25%/cover no-repeat;
+}
+.hero-overlay{position:absolute;inset:0;background:radial-gradient(circle at center,transparent 0,rgba(0,0,0,.35) 60%,rgba(0,0,0,.8) 100%)}
+.hero-content{position:relative;z-index:2;padding:35px 22px}
+.eyebrow,.small-title{letter-spacing:.28em;font-size:11px;color:var(--gold);font-weight:500}
+.ornament{color:var(--gold);font-size:25px;margin:8px 0}
+h1,h2,h3,h4{font-family:Cinzel,serif;font-weight:500}
+.hero h1{font-size:clamp(45px,10vw,90px);margin:5px 0 0;letter-spacing:.03em}
+.birthday{font-family:Cinzel,serif;color:var(--gold);font-size:18px;letter-spacing:.3em;margin:0 0 20px}
+.birthday sup{font-size:10px}
+.intro{font-size:14px;color:#eee5da;margin-bottom:32px}
+.open-btn,.map-btn{
+  display:inline-block;border:1px solid var(--gold);background:rgba(0,0,0,.35);color:var(--cream);
+  padding:13px 24px;text-decoration:none;letter-spacing:.18em;font-size:11px;cursor:pointer;
+  transition:.25s
+}
+.open-btn:hover,.map-btn:hover{background:var(--gold);color:var(--black)}
+.welcome,.details,.dress-code,.closing{padding:90px 22px;text-align:center;max-width:1050px;margin:auto}
+.welcome{background:linear-gradient(180deg,var(--black),#171113)}
+h2{font-size:clamp(28px,6vw,46px);margin:8px 0 18px}
+.welcome p:not(.small-title),.closing p{max-width:650px;margin:0 auto;color:var(--muted);font-size:14px}
+.gold-line{width:70px;height:1px;background:var(--gold);margin:28px auto}
+.welcome h3{color:var(--gold);font-size:20px;letter-spacing:.12em}
+.gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:5px;background:#000}
+.photo{height:470px;overflow:hidden}
+.photo img{width:100%;height:100%;object-fit:cover;transition:transform .6s}
+.photo:hover img{transform:scale(1.035)}
+.details{max-width:1200px}
+.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:15px;margin:35px 0}
+.detail-card{border:1px solid rgba(198,161,91,.4);padding:30px 18px;background:linear-gradient(145deg,#171012,#0e0b0c)}
+.icon{color:var(--gold);font-size:25px}
+.detail-card h4{font-size:12px;letter-spacing:.2em;color:var(--gold);margin:12px 0 8px}
+.detail-card p{font-size:13px;margin:0;color:#e6ddd3}
+.detail-card strong{font-family:Cinzel,serif;font-size:13px;color:#fff}
+.detail-card small{display:block;color:var(--muted);font-size:11px;margin-top:10px;line-height:1.6}
+.map-btn{margin-top:5px}
+.dress-code{background:linear-gradient(180deg,#120d0f,#1d1014);max-width:none}
+.theme-copy{color:var(--muted);font-style:italic}
+.palette{display:flex;justify-content:center;gap:12px;margin:30px 0 14px}
+.swatch{width:55px;height:55px;border-radius:50%;border:1px solid rgba(255,255,255,.3);box-shadow:0 0 0 5px rgba(255,255,255,.025)}
+.wine{background:#651f2a}.black{background:#090809}.gold{background:#c6a15b}.champagne{background:#eadcc8}
+.palette-label{font-size:10px;letter-spacing:.18em;color:var(--gold)}
+.mask-note{font-size:12px;color:var(--muted)}
+.closing{padding-bottom:100px}
+.signature{margin-top:35px!important;font-family:Cinzel,serif;color:var(--gold)!important}
+.signature strong{font-size:23px;letter-spacing:.08em}
+footer{padding:20px;text-align:center;background:#070607;color:#665d55;font-size:9px;letter-spacing:.2em}
+.mask-decoration{position:fixed;z-index:5;color:rgba(198,161,91,.22);font-size:45px;top:50%;pointer-events:none}
+.mask-left{left:12px}.mask-right{right:12px}
+@media(max-width:700px){
+  .gallery{grid-template-columns:1fr}
+  .photo{height:390px}
+  .detail-grid{grid-template-columns:1fr}
+  .welcome,.details,.dress-code,.closing{padding:70px 18px}
+  .hero{min-height:92vh}
+}
+
+.qr-section{padding:80px 22px;text-align:center;background:#0a0809;border-top:1px solid rgba(198,161,91,.12)}
+.qr-wrap{display:inline-block;background:#fff;padding:16px;margin:15px auto 10px;box-shadow:0 10px 35px rgba(0,0,0,.4)}
+.qr-wrap img{display:block;width:min(310px,72vw);height:auto}
+.qr-caption{color:var(--muted);font-size:12px;margin:8px auto 22px}
