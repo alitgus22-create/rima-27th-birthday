@@ -7,24 +7,29 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css?v=3">
+  <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
-  <div class="mask-decoration mask-left">◈</div>
-  <div class="mask-decoration mask-right">◈</div>
+  <div class="masquerade-floaters" aria-hidden="true">
+    <span class="particle p1">✦</span><span class="particle p2">❦</span><span class="particle p3">✧</span>
+    <span class="particle p4">✦</span><span class="particle p5">❧</span><span class="particle p6">✧</span>
+    <div class="floating-mask mask-one"><svg viewBox="0 0 260 120" aria-hidden="true"><path class="mask-fill" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M42 48Q73 34 105 48Q130 61 155 48Q187 34 218 48"/><ellipse class="eye" cx="82" cy="57" rx="29" ry="13"/><ellipse class="eye" cx="178" cy="57" rx="29" ry="13"/><path class="mask-line" d="M130 43L121 70L130 77L139 70Z"/></svg></div>
+    <div class="floating-mask mask-two"><svg viewBox="0 0 260 120" aria-hidden="true"><path class="mask-fill" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M42 48Q73 34 105 48Q130 61 155 48Q187 34 218 48"/><ellipse class="eye" cx="82" cy="57" rx="29" ry="13"/><ellipse class="eye" cx="178" cy="57" rx="29" ry="13"/><path class="mask-line" d="M130 43L121 70L130 77L139 70Z"/></svg></div>
+    <div class="floating-mask mask-three"><svg viewBox="0 0 260 120" aria-hidden="true"><path class="mask-fill" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M42 48Q73 34 105 48Q130 61 155 48Q187 34 218 48"/><ellipse class="eye" cx="82" cy="57" rx="29" ry="13"/><ellipse class="eye" cx="178" cy="57" rx="29" ry="13"/><path class="mask-line" d="M130 43L121 70L130 77L139 70Z"/></svg></div>
+  </div>
 
   <main>
     <section class="hero">
       <div class="hero-overlay"></div>
+      <div class="hero-side-mask hero-mask-left" aria-hidden="true"><svg viewBox="0 0 260 120"><path class="mask-fill" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><ellipse class="eye" cx="82" cy="57" rx="29" ry="13"/><ellipse class="eye" cx="178" cy="57" rx="29" ry="13"/></svg></div>
+      <div class="hero-side-mask hero-mask-right" aria-hidden="true"><svg viewBox="0 0 260 120"><path class="mask-fill" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><ellipse class="eye" cx="82" cy="57" rx="29" ry="13"/><ellipse class="eye" cx="178" cy="57" rx="29" ry="13"/></svg></div>
       <div class="hero-content">
         <p class="eyebrow">A NIGHT OF MYSTERY &amp; ELEGANCE</p>
         <div class="ornament">✦</div>
         <h1>Rima Taski</h1>
         <p class="birthday">27<sup>TH</sup> BIRTHDAY</p>
         <p class="intro">You are cordially invited to an enchanting<br>Bal Masque celebration.</p>
-        <button class="open-btn" onclick="document.getElementById('details').scrollIntoView({behavior:'smooth'})">
-          OPEN INVITATION
-        </button>
+        <button class="open-btn" onclick="document.getElementById('details').scrollIntoView({behavior:'smooth'})">OPEN INVITATION</button>
       </div>
     </section>
 
@@ -32,12 +37,7 @@
       <div class="ornament">✦</div>
       <p class="small-title">THE HONOR OF YOUR PRESENCE</p>
       <h2>Let's Celebrate</h2>
-      <p>
-        Dengan penuh sukacita, saya mengundang Anda untuk hadir
-        dalam perayaan ulang tahun ke-27 saya. Mari menikmati malam
-        yang penuh keanggunan, tawa, dan misteri dalam suasana
-        <i>Bal Masque</i>.
-      </p>
+      <p>Dengan penuh sukacita, saya mengundang Anda untuk hadir dalam perayaan ulang tahun ke-27 saya. Mari menikmati malam yang penuh keanggunan, tawa, dan misteri dalam suasana <i>Bal Masque</i>.</p>
       <div class="gold-line"></div>
       <h3>Rima Taski</h3>
     </section>
@@ -52,79 +52,61 @@
       <p class="small-title">SAVE THE DATE</p>
       <h2>An Evening to Remember</h2>
       <div class="detail-grid">
-        <div class="detail-card">
-          <span class="icon">♜</span>
-          <h4>DATE</h4>
-          <p>Sunday</p>
-          <strong>04 OCTOBER 2026</strong>
-        </div>
-        <div class="detail-card">
-          <span class="icon">◷</span>
-          <h4>TIME</h4>
-          <p>04.00 PM — SELESAI</p>
-          <strong>WIB</strong>
-        </div>
-        <div class="detail-card">
-          <span class="icon">♜</span>
-          <h4>VENUE</h4>
-          <p>Hotel Wahid</p>
-          <small>Jl. Raya Ambarawa Bandungan No.Km. 3,<br>
-          Barandukun, Baran, Kec. Ambarawa,<br>
-          Kabupaten Semarang, Jawa Tengah 50613</small>
-        </div>
+        <div class="detail-card"><span class="icon">♜</span><h4>DATE</h4><p>Sunday</p><strong>04 OCTOBER 2026</strong></div>
+        <div class="detail-card"><span class="icon">◷</span><h4>TIME</h4><p>04.00 PM — SELESAI</p><strong>WIB</strong></div>
+        <div class="detail-card"><span class="icon">♜</span><h4>VENUE</h4><p>Hotel Wahid</p><small>Jl. Raya Ambarawa Bandungan No.Km. 3,<br>Barandukun, Baran, Kec. Ambarawa,<br>Kabupaten Semarang, Jawa Tengah 50613</small></div>
       </div>
-
-      <a class="map-btn" target="_blank"
-         href="https://www.google.com/maps/search/?api=1&query=Hotel%20Wahid%2C%20Jl.%20Raya%20Ambarawa%20Bandungan%20No.Km.%203%2C%20Barandukun%2C%20Baran%2C%20Kec.%20Ambarawa%2C%20Kabupaten%20Semarang%2C%20Jawa%20Tengah%2050613">
-        ✦ VIEW LOCATION
-      </a>
+      <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/wx3nQz3EGjszhKgh6">✦ VIEW LOCATION</a>
     </section>
 
     <section class="dress-code">
-      <div class="ornament">✦</div>
+      <div class="mini-mask" aria-hidden="true"><svg viewBox="0 0 260 120"><path class="mask-fill" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><path class="mask-line" d="M18 43Q50 10 93 27Q130 42 167 27Q210 10 242 43L222 88Q190 108 158 91L130 76L102 91Q70 108 38 88Z"/><ellipse class="eye" cx="82" cy="57" rx="29" ry="13"/><ellipse class="eye" cx="178" cy="57" rx="29" ry="13"/></svg></div>
       <p class="small-title">THE THEME</p>
       <h2>Bal Masque</h2>
       <p class="theme-copy">A night of masks, mystery &amp; timeless elegance.</p>
       <p class="theme-note">Theme: <strong>Black • Antique Gold</strong></p>
-
       <div class="dress-divider"></div>
       <div class="dress-title">DRESSCODE</div>
       <div class="dress-color">BLUE</div>
       <p class="dress-note">Silakan mengenakan outfit bernuansa biru untuk pesta.</p>
-      <div class="palette blue-palette">
-        <div class="swatch navy" title="Navy Blue"></div>
-        <div class="swatch royal" title="Royal Blue"></div>
-        <div class="swatch sky" title="Sky Blue"></div>
-        <div class="swatch ice" title="Ice Blue"></div>
-      </div>
+      <div class="palette blue-palette"><div class="swatch navy" title="Navy Blue"></div><div class="swatch royal" title="Royal Blue"></div><div class="swatch sky" title="Sky Blue"></div><div class="swatch ice" title="Ice Blue"></div></div>
       <p class="palette-label">NAVY • ROYAL BLUE • SKY BLUE • ICE BLUE</p>
     </section>
-
 
     <section class="qr-section">
       <div class="ornament">✦</div>
       <p class="small-title">SCAN FOR LOCATION</p>
       <h2>Find the Venue</h2>
-      <div class="qr-wrap">
-        <img src="qr-location.png" alt="QR Code lokasi Hotel Wahid">
-      </div>
+      <div class="qr-wrap"><img src="qr-location.png" alt="QR Code lokasi Hotel Wahid"></div>
       <p class="qr-caption">Scan QR Code untuk membuka lokasi acara di Google Maps.</p>
-      <a class="map-btn" target="_blank"
-         href="https://maps.app.goo.gl/wx3nQz3EGjszhKgh6">
-        ✦ OPEN GOOGLE MAPS
-      </a>
+      <a class="map-btn" target="_blank" href="https://maps.app.goo.gl/wx3nQz3EGjszhKgh6">✦ OPEN GOOGLE MAPS</a>
+    </section>
+
+    <section class="music-section">
+      <div class="music-glow"></div>
+      <div class="ornament">♪</div>
+      <p class="small-title">NOW PLAYING</p>
+      <h2>La leçon particulière</h2>
+      <p class="music-artist">Francis Lai • Christian Gaubert</p>
+      <div class="music-player">
+        <div class="vinyl"><span></span></div>
+        <div class="music-info"><strong>La leçon particulière</strong><small>Original Motion Picture Soundtrack</small></div>
+        <a class="music-btn" href="https://www.youtube.com/watch?v=GswUBqfinAE" target="_blank" rel="noopener">▶ PLAY MUSIC</a>
+      </div>
+      <p class="music-note">Tap PLAY MUSIC untuk mendengarkan lagu melalui kanal resmi YouTube.</p>
     </section>
 
     <section class="closing">
+      <div class="closing-mask" aria-hidden="true"><svg viewBox="0 0 520 230"><path class="mask-fill" d="M35 83Q101 18 186 48Q260 72 334 48Q419 18 485 83L445 169Q383 207 322 174L260 145L198 174Q137 207 75 169Z"/><path class="mask-line thick" d="M35 83Q101 18 186 48Q260 72 334 48Q419 18 485 83L445 169Q383 207 322 174L260 145L198 174Q137 207 75 169Z"/><path class="mask-line" d="M83 91Q142 57 204 85Q260 111 316 85Q378 57 437 91"/><ellipse class="eye" cx="167" cy="103" rx="59" ry="25"/><ellipse class="eye" cx="353" cy="103" rx="59" ry="25"/><path class="mask-line" d="M260 73L242 131L260 146L278 131Z"/><path class="mask-line" d="M52 57Q26 37 12 48M468 57Q494 37 508 48"/></svg></div>
       <div class="ornament">✦</div>
       <h2>See You Behind the Mask</h2>
       <p>Datanglah dan jadikan malam ini bagian dari kenangan yang indah.</p>
       <p class="signature">With love,<br><strong>Rima Taski</strong></p>
+      <div class="closing-ornament">✦ ───────── ✦</div>
     </section>
   </main>
 
-  <footer>
-    <p>RIMA TASKI • 27TH BIRTHDAY • 2026</p>
-  </footer>
+  <footer><p>RIMA TASKI • 27TH BIRTHDAY • 2026</p></footer>
+  <script src="script.js?v=2"></script>
 </body>
 </html>
