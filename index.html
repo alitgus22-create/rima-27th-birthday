@@ -10,6 +10,12 @@
   <link rel="stylesheet" href="style.css?v=3">
 </head>
 <body>
+  <audio id="bgMusic" loop preload="auto">
+    <source src="la-lecon-particuliere.mp3" type="audio/mpeg">
+  </audio>
+
+  <button id="musicToggle" aria-label="Play atau pause musik" title="Musik">♫</button>
+
   <div class="mask-decoration mask-left">◈</div>
   <div class="mask-decoration mask-right">◈</div>
   <main>
@@ -21,7 +27,7 @@
         <h1>Rima Taski</h1>
         <p class="birthday">27<sup>TH</sup> BIRTHDAY</p>
         <p class="intro">You are cordially invited to an enchanting<br>Bal Masque celebration.</p>
-        <button class="open-btn" onclick="document.getElementById('details').scrollIntoView({behavior:'smooth'})">OPEN INVITATION</button>
+        <button class="open-btn" id="openInvitation">OPEN INVITATION</button>
       </div>
     </section>
     <section class="welcome">
@@ -76,5 +82,38 @@
     </section>
   </main>
   <footer><p>RIMA TASKI • 27TH BIRTHDAY • 2026</p></footer>
+
+  <script>
+    const music = document.getElementById('bgMusic');
+    const openInvitation = document.getElementById('openInvitation');
+    const musicToggle = document.getElementById('musicToggle');
+
+    openInvitation.addEventListener('click', async () => {
+      try {
+        music.volume = 0.55;
+        await music.play();
+        musicToggle.classList.add('playing');
+        musicToggle.textContent = '♫';
+      } catch (e) {
+        console.log('Musik belum dapat diputar:', e);
+      }
+      document.getElementById('details').scrollIntoView({ behavior: 'smooth' });
+    });
+
+    musicToggle.addEventListener('click', async () => {
+      if (music.paused) {
+        try {
+          music.volume = 0.55;
+          await music.play();
+          musicToggle.classList.add('playing');
+        } catch (e) {
+          console.log('Musik belum dapat diputar:', e);
+        }
+      } else {
+        music.pause();
+        musicToggle.classList.remove('playing');
+      }
+    });
+  </script>
 </body>
 </html>
